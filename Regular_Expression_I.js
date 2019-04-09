@@ -29,7 +29,7 @@ function regexVar() {
      */
     
     //var re = /^[aeiou].*[aeiou]$/;
-    var re =/^[aeiou] *\1$ |^ [aeiou]$/;
+    var re = /^([aeiou]).*\1$/;
     /*
      * Do not remove the return statement
      */
