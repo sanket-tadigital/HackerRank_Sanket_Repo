@@ -29,7 +29,7 @@ function regexVar() {
      * followed by one or more letters.
      */
     
-    var re = /^[Mr.Mrs.Ms.Dr.Er.].*[A-Z,a-z]$/;
+  var re = /^(?:Mr|Mrs|Ms|Dr|Er)\.[a-zA-Z]+$/;
     /*
      * Do not remove the return statement
      */
