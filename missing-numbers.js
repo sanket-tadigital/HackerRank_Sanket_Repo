@@ -48,11 +48,22 @@ function missingNumbers(arr, brr) {
         }
         if (flag==0)
         {
+            var bc = 1;
             if (absent[x - 1] < brr[i])
                 nf = 1;
-            else
+            else {
                 nf = 0;
-            absent[x++] = brr[i];        
+                for (var f = 0; f < x; f++) {
+                    if (absent[f] == brr[i]) {
+                        bc = 0;
+                        break;
+                    } else {
+                        bc = 1;
+                    }
+                }
+            }
+            if(bc==1)
+                absent[x++] = brr[i];   
         }
         //console.log(arr);
        
