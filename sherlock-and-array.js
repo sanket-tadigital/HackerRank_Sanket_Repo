@@ -25,6 +25,8 @@ function readLine() {
 // Complete the balancedSums function below.
 function balancedSums(arr) {
     var len = arr.length,sum2=0, sum1=0,flag;
+	if(len==1)
+		return "YES";
     for (var i = 0; i < len - 1; i++)
     {
         flag = 0
